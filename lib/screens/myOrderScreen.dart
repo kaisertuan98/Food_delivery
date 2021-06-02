@@ -26,7 +26,7 @@ class MyOrderScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: Text(
-                        "My Order",
+                        "Đơn hàng của tôi",
                         style: Helper.getTheme(context).headline5,
                       ),
                     )
@@ -82,12 +82,12 @@ class MyOrderScreen extends StatelessWidget {
                                     color: AppColor.orange,
                                   ),
                                 ),
-                                Text(" (124 ratings)"),
+                                Text(" (124 đánh giá)"),
                               ],
                             ),
                             Row(
                               children: [
-                                Text("Burger"),
+                                Text("Ham"),
                                 Padding(
                                   padding: const EdgeInsets.only(
                                     bottom: 5,
@@ -100,7 +100,7 @@ class MyOrderScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                Text("Western Food"),
+                                Text("Burger"),
                               ],
                             ),
                             Row(
@@ -117,7 +117,7 @@ class MyOrderScreen extends StatelessWidget {
                                 SizedBox(
                                   width: 5,
                                 ),
-                                Text("No 03, 4th Lane, Newyork")
+                                Text("Hoà Quý, Ngũ Hành Sơn, Đà Nẵng")
                               ],
                             )
                           ],
@@ -138,23 +138,23 @@ class MyOrderScreen extends StatelessWidget {
                       children: [
                         BurgerCard(
                           price: "16",
-                          name: "Beef Burger",
+                          name: "Burger thịt bò",
                         ),
                         BurgerCard(
                           price: "14",
-                          name: "Classic Burger",
+                          name: "Burger truyền thống",
                         ),
                         BurgerCard(
                           price: "17",
-                          name: "Cheese Chicken Burger",
+                          name: "Burger kem gà",
                         ),
                         BurgerCard(
                           price: "15",
-                          name: "Chicken Legs Basket",
+                          name: "Gà chiên",
                         ),
                         BurgerCard(
                           price: "6",
-                          name: "French Fries Large",
+                          name: "Khoai tây chiên lớn",
                           isLast: true,
                         ),
                       ],
@@ -178,7 +178,7 @@ class MyOrderScreen extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Text(
-                                "Delivery Instruction",
+                                "Hướng dẫn giao hàng",
                                 style: Helper.getTheme(context).headline3,
                               ),
                             ),
@@ -191,7 +191,7 @@ class MyOrderScreen extends StatelessWidget {
                                       color: AppColor.orange,
                                     ),
                                     Text(
-                                      "Add Notes",
+                                      "Ghi chú",
                                       style: TextStyle(
                                         color: AppColor.orange,
                                       ),
@@ -208,7 +208,7 @@ class MyOrderScreen extends StatelessWidget {
                         children: [
                           Expanded(
                             child: Text(
-                              "Sub Total",
+                              "Tổng món ăn",
                               style: Helper.getTheme(context).headline3,
                             ),
                           ),
@@ -227,7 +227,7 @@ class MyOrderScreen extends StatelessWidget {
                         children: [
                           Expanded(
                             child: Text(
-                              "Delivery Cost",
+                              "Phí giao hàng",
                               style: Helper.getTheme(context).headline3,
                             ),
                           ),
@@ -253,7 +253,7 @@ class MyOrderScreen extends StatelessWidget {
                         children: [
                           Expanded(
                             child: Text(
-                              "Total",
+                              "Tổng",
                               style: Helper.getTheme(context).headline3,
                             ),
                           ),
@@ -275,7 +275,7 @@ class MyOrderScreen extends StatelessWidget {
                             Navigator.of(context)
                                 .pushNamed(CheckoutScreen.routeName);
                           },
-                          child: Text("Checkout"),
+                          child: Text("Thanh toán"),
                         ),
                       ),
                     ],
