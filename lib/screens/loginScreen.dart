@@ -98,7 +98,7 @@ class LoginScreen extends StatelessWidget {
                       //   email:
                       // )
                       // Navigator.of(context)
-                      //     .pushReplacementNamed(HomeScreen.routeName);
+                      //      .pushReplacementNamed(HomeScreen.routeName);
                     },
                     child: Text("Đăng nhập"),
                   ),

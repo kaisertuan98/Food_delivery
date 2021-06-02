@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
+import 'package:monkey_app_demo/screens/homeScreen.dart';
+import 'package:monkey_app_demo/screens/landingScreen.dart';
+import 'package:monkey_app_demo/screens/loginScreen.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 import 'package:monkey_app_demo/widgets/customNavBar.dart';
-import 'package:monkey_app_demo/widgets/customTextInput.dart';
+import 'package:provider/provider.dart';
+import 'package:monkey_app_demo/services/authentication.dart';
 
 class ProfileScreen extends StatelessWidget {
   static const routeName = "/profileScreen";
@@ -24,7 +28,7 @@ class ProfileScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Profile",
+                            "Thông tin cá nhân",
                             style: Helper.getTheme(context).headline5,
                           ),
                           Image.asset(
@@ -75,7 +79,7 @@ class ProfileScreen extends StatelessWidget {
                             width: 5,
                           ),
                           Text(
-                            "Edit Profile",
+                            "Chỉnh sửa",
                             style: TextStyle(color: AppColor.orange),
                           ),
                         ],
@@ -90,50 +94,50 @@ class ProfileScreen extends StatelessWidget {
                             ),
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 10,
                       ),
-                      Text("Sign Out"),
+                      Text("Save"),
                       SizedBox(
-                        height: 40,
+                        height: 10,
                       ),
                       CustomFormImput(
-                        label: "Name",
+                        label: "Tên",
                         value: "Emilia Clarke",
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       CustomFormImput(
                         label: "Email",
                         value: "emiliaclarke@email.com",
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       CustomFormImput(
-                        label: "Mobile No",
+                        label: "Số điện thoại",
                         value: "emiliaclarke@email.com",
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       CustomFormImput(
-                        label: "Address",
+                        label: "Địa chỉ",
                         value: "No 23, 6th Lane, Colombo 03",
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       CustomFormImput(
-                        label: "Password",
+                        label: "Mật khẩu",
                         value: "Emilia Clarke",
                         isPassword: true,
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       CustomFormImput(
-                        label: "Confirm Password",
+                        label: "Xác nhận mật khẩu",
                         value: "Emilia Clarke",
                         isPassword: true,
                       ),
@@ -144,8 +148,12 @@ class ProfileScreen extends StatelessWidget {
                         height: 50,
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text("Save"),
+                          onPressed: () {
+                            context.read<AuthenticateService>().logout();
+                            Navigator.of(context)
+                                .pushReplacementNamed(LandingScreen.routeName);
+                          },
+                          child: Text("Đăng xuất"),
                         ),
                       )
                     ],
