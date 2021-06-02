@@ -22,14 +22,14 @@ class _IntroScreenState extends State<IntroScreen> {
     },
     {
       "image": "vector2.png",
-      "title": "Fast Delivery",
-      "desc": "Fast food delivery to your home, office wherever you are"
+      "title": "Giao hàng nhanh",
+      "desc": "Giao thức ăn nhanh tận nhà, văn phòng mọi lúc mọi nơi"
     },
     {
       "image": "vector3.png",
-      "title": "Live Tracking",
+      "title": "Theo dõi trực tiếp",
       "desc":
-          "Real time tracking of your food on the app once you placed the order"
+          "Theo dõi thời gian thực món ăn của bạn trên ứng dụng sau khi bạn đặt hàng"
     },
   ];
 
@@ -114,7 +114,7 @@ class _IntroScreenState extends State<IntroScreen> {
                         Navigator.of(context)
                             .pushReplacementNamed(HomeScreen.routeName);
                       },
-                      child: Text("Next")),
+                      child: Text("Tiếp tục")),
                 ),
                 Spacer()
               ],
