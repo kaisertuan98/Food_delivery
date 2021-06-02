@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>40895399376-ijcgqph48q6dlg78242rkrsbdg9nk445.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.40895399376-ijcgqph48q6dlg78242rkrsbdg9nk445</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA1BCsJvBwM9c_GCgsNnhtrnMo4jcE3rJs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>40895399376</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>vku.chuyende.fooddelivery.ios</string>
+	<key>PROJECT_ID</key>
+	<string>fooddelivery-b6854</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fooddelivery-b6854.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:40895399376:ios:0765f520e0be8ae76f65d5</string>
+</dict>
+</plist>

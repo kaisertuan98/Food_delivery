@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "40895399376",
+    "project_id": "fooddelivery-b6854",
+    "storage_bucket": "fooddelivery-b6854.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40895399376:android:6cf6f32e70d368ef6f65d5",
+        "android_client_info": {
+          "package_name": "vku.chuyende.fooddelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40895399376-7procsegua1r09c9u29a6om9qkbt5kto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZyRvzkrLit4gmmLgYfLhhhUfq-975H8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40895399376-7procsegua1r09c9u29a6om9qkbt5kto.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "40895399376-ur9j8hl2t3hvcmpugajv1htm4sd49pun.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vku.chuyende.fooddelivery"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
