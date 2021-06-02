@@ -23,7 +23,7 @@ class OfferScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Latest Offers",
+                            "Ưu đãi mới nhất",
                             style: Helper.getTheme(context).headline5,
                           ),
                           Image.asset(
@@ -33,12 +33,12 @@ class OfferScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 20,
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
-                        children: [Text("Find discounts, Offer special")],
+                        children: [Text("Tìm món ngon, ưu đãi đặc biệt")],
                       ),
                     ),
                     SizedBox(
@@ -52,7 +52,8 @@ class OfferScreen extends StatelessWidget {
                             height: 30,
                             width: Helper.getScreenWidth(context) * 0.4,
                             child: ElevatedButton(
-                                onPressed: () {}, child: Text("Check Offers")),
+                                onPressed: () {},
+                                child: Text("Phiếu giảm giá")),
                           ),
                         ],
                       ),
@@ -157,7 +158,7 @@ class OfferCard extends StatelessWidget {
                 SizedBox(
                   width: 5,
                 ),
-                Text("(124 ratings) Cafe"),
+                Text("(124 đánh giá) Cafe"),
                 SizedBox(
                   width: 5,
                 ),

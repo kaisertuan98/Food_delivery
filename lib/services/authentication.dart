@@ -17,7 +17,13 @@ class AuthenticateService {
           email: email, password: password);
       return "Da Dang nhap";
     } on FirebaseAuthException catch (e) {
-      return e.message;
+      if (e.code == 'user-not-found') {
+        return "No user found for that email.";
+      } else if (e.code == 'wrong-password') {
+        return "Wrong password provided for that user.";
+      } else {
+        return "Something Went Wrong.";
+      }
     }
   }
 
@@ -36,7 +42,7 @@ class AuthenticateService {
   /*
    * LOGOUT
    */
-  Future<void> logout() async {
+  Future<void> logOut() async {
     await _firebaseAuth.signOut();
   }
 }

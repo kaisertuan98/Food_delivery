@@ -35,7 +35,7 @@ class MenuScreen extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                SearchBar(title: "Search Food"),
+                SearchBar(title: "Tìm kiếm nhanh"),
                 SizedBox(
                   height: 20,
                 ),
@@ -73,7 +73,7 @@ class MenuScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                name: "Food",
+                                name: "Đồ ăn",
                                 count: "120",
                               ),
                               SizedBox(
@@ -92,7 +92,7 @@ class MenuScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                name: "Beverage",
+                                name: "Đồ uống",
                                 count: "220",
                               ),
                               SizedBox(
@@ -116,7 +116,7 @@ class MenuScreen extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  name: "Desserts",
+                                  name: "Tráng miệng",
                                   count: "135",
                                 ),
                               ),
@@ -136,7 +136,7 @@ class MenuScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                name: "Promotions",
+                                name: "Khuyến mãi",
                                 count: "25",
                               ),
                             ],
@@ -217,7 +217,7 @@ class MenuCard extends StatelessWidget {
               SizedBox(
                 height: 5,
               ),
-              Text("$_count items")
+              Text("$_count món")
             ],
           ),
         ),

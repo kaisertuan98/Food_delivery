@@ -88,7 +88,7 @@ class ProfileScreen extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        "Hi there Emilia!",
+                        "Xin chào!",
                         style: Helper.getTheme(context).headline4.copyWith(
                               color: AppColor.primary,
                             ),
@@ -96,49 +96,48 @@ class ProfileScreen extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      Text("Save"),
+                      Text("Lưu"),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       CustomFormImput(
                         label: "Tên",
-                        value: "Emilia Clarke",
+                        value: "Anh Tuấn",
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       CustomFormImput(
                         label: "Email",
-                        value: "emiliaclarke@email.com",
+                        value: "tuan@gmail.com",
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       CustomFormImput(
                         label: "Số điện thoại",
-                        value: "emiliaclarke@email.com",
+                        value: "0989999789",
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       CustomFormImput(
                         label: "Địa chỉ",
-                        value: "No 23, 6th Lane, Colombo 03",
+                        value: "Hoà Quý, Ngũ Hành Sơn, Tp Đà Nẵng",
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      CustomFormImput(
+                        label: "Năm sinh",
+                        value: "15/02/1998",
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       CustomFormImput(
                         label: "Mật khẩu",
-                        value: "Emilia Clarke",
-                        isPassword: true,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      CustomFormImput(
-                        label: "Xác nhận mật khẩu",
-                        value: "Emilia Clarke",
+                        value: "123123",
                         isPassword: true,
                       ),
                       SizedBox(
@@ -149,7 +148,7 @@ class ProfileScreen extends StatelessWidget {
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {
-                            context.read<AuthenticateService>().logout();
+                            context.read<AuthenticateService>().logOut();
                             Navigator.of(context)
                                 .pushReplacementNamed(LandingScreen.routeName);
                           },

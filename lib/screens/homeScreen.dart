@@ -181,12 +181,12 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Most Popular",
+                          "Phổ biến nhất",
                           style: Helper.getTheme(context).headline5,
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("View all"),
+                          child: Text("Tất cả"),
                         ),
                       ],
                     ),
@@ -232,12 +232,12 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Recent Items",
+                          "Xem gần đây",
                           style: Helper.getTheme(context).headline5,
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("View all"),
+                          child: Text("Tất cả"),
                         ),
                       ],
                     ),
@@ -372,7 +372,7 @@ class RecentItemCard extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 10),
-                    Text('(124) Ratings')
+                    Text('(124) đánh giá')
                   ],
                 )
               ],
@@ -515,7 +515,7 @@ class RestaurantCard extends StatelessWidget {
                     SizedBox(
                       width: 5,
                     ),
-                    Text("(124 ratings)"),
+                    Text("(124 đánh giá)"),
                     SizedBox(
                       width: 5,
                     ),
