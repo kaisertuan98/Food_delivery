@@ -65,16 +65,19 @@ class CustomNavBar extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           menu
-                              ? Image.asset(
-                                  Helper.getAssetName(
-                                      "more_filled.png", "virtual"),
+                              ? Icon(
+                                  Icons.menu_book,
+                                  color: Colors.green,
+                                  size: 30.0,
                                 )
-                              : Image.asset(
-                                  Helper.getAssetName("more.png", "virtual"),
+                              : Icon(
+                                  Icons.menu_book,
+                                  color: Colors.red[700],
+                                  size: 30.0,
                                 ),
                           menu
                               ? Text("Menu",
-                                  style: TextStyle(color: AppColor.orange))
+                                  style: TextStyle(color: AppColor.green))
                               : Text("Menu"),
                         ],
                       ),
@@ -90,16 +93,19 @@ class CustomNavBar extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           offer
-                              ? Image.asset(
-                                  Helper.getAssetName(
-                                      "bag_filled.png", "virtual"),
+                              ? Icon(
+                                  Icons.verified,
+                                  color: Colors.green,
+                                  size: 30.0,
                                 )
-                              : Image.asset(
-                                  Helper.getAssetName("bag.png", "virtual"),
+                              : Icon(
+                                  Icons.verified,
+                                  color: Colors.red[700],
+                                  size: 30.0,
                                 ),
                           offer
                               ? Text("Khuyến mãi",
-                                  style: TextStyle(color: AppColor.orange))
+                                  style: TextStyle(color: AppColor.green))
                               : Text("Khuyến mãi"),
                         ],
                       ),
@@ -118,16 +124,19 @@ class CustomNavBar extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           profile
-                              ? Image.asset(
-                                  Helper.getAssetName(
-                                      "user_filled.png", "virtual"),
+                              ? Icon(
+                                  Icons.person_sharp,
+                                  color: Colors.green,
+                                  size: 30.0,
                                 )
-                              : Image.asset(
-                                  Helper.getAssetName("user.png", "virtual"),
+                              : Icon(
+                                  Icons.person_sharp,
+                                  color: Colors.red[700],
+                                  size: 30.0,
                                 ),
                           profile
                               ? Text("Cá nhân",
-                                  style: TextStyle(color: AppColor.orange))
+                                  style: TextStyle(color: AppColor.green))
                               : Text("Cá nhân"),
                         ],
                       ),
@@ -143,16 +152,19 @@ class CustomNavBar extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           more
-                              ? Image.asset(
-                                  Helper.getAssetName(
-                                      "menu_filled.png", "virtual"),
+                              ? Icon(
+                                  Icons.apps_sharp,
+                                  color: Colors.green,
+                                  size: 30.0,
                                 )
-                              : Image.asset(
-                                  Helper.getAssetName("menu.png", "virtual"),
+                              : Icon(
+                                  Icons.apps_sharp,
+                                  color: Colors.red[700],
+                                  size: 30.0,
                                 ),
                           more
                               ? Text("Tiện ích",
-                                  style: TextStyle(color: AppColor.orange))
+                                  style: TextStyle(color: AppColor.green))
                               : Text("Tiện ích"),
                         ],
                       ),
@@ -169,15 +181,18 @@ class CustomNavBar extends StatelessWidget {
               width: 70,
               child: FloatingActionButton(
                 elevation: 0,
-                backgroundColor: home ? AppColor.orange : AppColor.placeholder,
+                backgroundColor: home ? AppColor.green : AppColor.red,
                 onPressed: () {
                   if (!home) {
                     Navigator.of(context)
                         .pushReplacementNamed(HomeScreen.routeName);
                   }
                 },
-                child: Image.asset(
-                    Helper.getAssetName("home_white.png", "virtual")),
+                child: Icon(
+                  Icons.home_filled,
+                  color: Colors.white,
+                  size: 40,
+                ),
               ),
             ),
           )
