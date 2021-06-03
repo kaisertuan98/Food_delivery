@@ -48,6 +48,8 @@ class SendOTPScreen extends StatelessWidget {
               height: 50,
               width: double.infinity,
               child: ElevatedButton(
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.green)),
                 onPressed: () {
                   Navigator.of(context)
                       .pushReplacementNamed(NewPwScreen.routeName);
@@ -63,7 +65,7 @@ class SendOTPScreen extends StatelessWidget {
                 Text(
                   "Gửi lại",
                   style: TextStyle(
-                    color: AppColor.orange,
+                    color: AppColor.green,
                     fontWeight: FontWeight.bold,
                   ),
                 )

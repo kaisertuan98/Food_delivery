@@ -42,6 +42,8 @@ class SignUpScreen extends StatelessWidget {
                 height: 50,
                 width: double.infinity,
                 child: ElevatedButton(
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.green)),
                   onPressed: () {},
                   child: Text("Tạo tài khoản"),
                 ),
@@ -59,7 +61,7 @@ class SignUpScreen extends StatelessWidget {
                     Text(
                       " Đăng nhập",
                       style: TextStyle(
-                        color: AppColor.orange,
+                        color: AppColor.green,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

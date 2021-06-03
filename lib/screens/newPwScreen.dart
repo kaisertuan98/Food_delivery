@@ -44,6 +44,9 @@ class NewPwScreen extends StatelessWidget {
                   height: 50,
                   width: double.infinity,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.green)),
                     onPressed: () {
                       Navigator.of(context)
                           .pushReplacementNamed(IntroScreen.routeName);

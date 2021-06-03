@@ -72,6 +72,7 @@ class LoginScreen extends StatelessWidget {
                     shape: StadiumBorder(),
                   ),
                   child: TextField(
+                    obscureText: true,
                     controller: passwordController,
                     decoration: InputDecoration(
                       border: InputBorder.none,
@@ -96,12 +97,6 @@ class LoginScreen extends StatelessWidget {
                       context.read<AuthenticateService>().signInWithEmail(
                           email: emailController.text.trim(),
                           password: passwordController.text.trim());
-                      //Signin method
-                      // context.read<AuthenticateService>().signInWithEmail(
-                      //   email:
-                      // )
-                      // Navigator.of(context)
-                      //      .pushReplacementNamed(HomeScreen.routeName);
                     },
                     child: Text("Đăng nhập"),
                   ),

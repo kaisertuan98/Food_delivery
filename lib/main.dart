@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:monkey_app_demo/screens/changeAddressScreen.dart';
 import 'package:monkey_app_demo/services/authentication.dart';
@@ -130,14 +132,46 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class AuthenticationWrapper extends StatelessWidget {
+class AuthenticationWrapper extends StatefulWidget {
   const AuthenticationWrapper({Key key}) : super(key: key);
+
+  @override
+  _AuthenticationWrapperState createState() => _AuthenticationWrapperState();
+}
+
+class _AuthenticationWrapperState extends State<AuthenticationWrapper> {
+  StreamSubscription _streamSubscription;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+
+    _streamSubscription =
+        context.read<AuthenticateService>().authStateChanges.listen((user) {
+      if (user != null) {
+        Navigator.of(context).pushNamed(HomeScreen.routeName);
+      } else {
+        Navigator.of(context).pushNamed(LandingScreen.routeName);
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    if (_streamSubscription != null) {
+      _streamSubscription.cancel();
+    }
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final firebaseuser = context.watch<User>();
-    if (firebaseuser != null) {
-      return HomeScreen();
-    }
-    return LandingScreen();
+    //SplashScreen
+    return Scaffold(
+      body: Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
   }
 }

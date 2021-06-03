@@ -46,14 +46,14 @@ class LandingScreen extends StatelessWidget {
           Align(
             alignment: Alignment.center,
             child: Image.asset(
-              Helper.getAssetName("logo.png", "virtual"),
+              Helper.getAssetName("Logo1.png", "virtual"),
             ),
           ),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
               width: double.infinity,
-              height: Helper.getScreenHeight(context) * 0.3,
+              height: Helper.getScreenHeight(context) * 0.35,
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Column(
                 children: [
@@ -61,6 +61,7 @@ class LandingScreen extends StatelessWidget {
                     child: Text(
                       "Khám phá những món ăn ngon nhất từ hơn 1.000 nhà hàng và giao hàng nhanh chóng đến tận nhà",
                       textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 15),
                     ),
                   ),
                   Spacer(

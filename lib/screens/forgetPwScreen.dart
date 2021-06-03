@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:monkey_app_demo/const/colors.dart';
 
 import '../utils/helper.dart';
 import '../widgets/customTextInput.dart';
@@ -37,6 +36,9 @@ class ForgetPwScreen extends StatelessWidget {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.green)),
                     onPressed: () {
                       Navigator.of(context)
                           .pushReplacementNamed(SendOTPScreen.routeName);
