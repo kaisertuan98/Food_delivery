@@ -88,6 +88,9 @@ class LoginScreen extends StatelessWidget {
                   height: 50,
                   width: double.infinity,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.green)),
                     onPressed: () {
                       // Provider;
                       context.read<AuthenticateService>().signInWithEmail(
@@ -186,11 +189,11 @@ class LoginScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Bạn chưa có tài khoản?"),
+                      Text("Bạn chưa có tài khoản? "),
                       Text(
                         "Đăng ký ngay",
                         style: TextStyle(
-                          color: AppColor.orange,
+                          color: AppColor.green,
                           fontWeight: FontWeight.bold,
                         ),
                       )

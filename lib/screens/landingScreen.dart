@@ -31,7 +31,7 @@ class LandingScreen extends StatelessWidget {
                 width: double.infinity,
                 height: Helper.getScreenHeight(context) * 0.5,
                 decoration: ShapeDecoration(
-                  color: AppColor.blueGray,
+                  color: AppColor.green,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -46,7 +46,7 @@ class LandingScreen extends StatelessWidget {
           Align(
             alignment: Alignment.center,
             child: Image.asset(
-              Helper.getAssetName("MealMonkeyLogo.png", "virtual"),
+              Helper.getAssetName("logo.png", "virtual"),
             ),
           ),
           Align(
@@ -59,7 +59,7 @@ class LandingScreen extends StatelessWidget {
                 children: [
                   Flexible(
                     child: Text(
-                      "Khám phá những món ăn ngon nhất từ hơn 1.000 nhà hàng và giao hàng nhanh chóng đến tận nhà bạn",
+                      "Khám phá những món ăn ngon nhất từ hơn 1.000 nhà hàng và giao hàng nhanh chóng đến tận nhà",
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -70,6 +70,9 @@ class LandingScreen extends StatelessWidget {
                     width: double.infinity,
                     height: 50,
                     child: ElevatedButton(
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.green)),
                       onPressed: () {
                         Navigator.of(context)
                             .pushReplacementNamed(LoginScreen.routeName);
@@ -88,11 +91,10 @@ class LandingScreen extends StatelessWidget {
                         backgroundColor:
                             MaterialStateProperty.all(Colors.white),
                         foregroundColor:
-                            MaterialStateProperty.all(AppColor.blueGray),
+                            MaterialStateProperty.all(AppColor.green),
                         shape: MaterialStateProperty.all(
                           StadiumBorder(
-                            side:
-                                BorderSide(color: AppColor.orange, width: 1.5),
+                            side: BorderSide(color: AppColor.green, width: 1.5),
                           ),
                         ),
                       ),
