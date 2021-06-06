@@ -27,12 +27,9 @@ class AboutScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          "About Us",
+                          "Điều khoản và dịch vụ",
                           style: Helper.getTheme(context).headline5,
                         ),
-                      ),
-                      Image.asset(
-                        Helper.getAssetName("cart.png", "virtual"),
                       ),
                     ],
                   ),
@@ -45,11 +42,6 @@ class AboutScreen extends StatelessWidget {
                       SizedBox(
                         height: 20,
                       ),
-                      AboutCard(),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      AboutCard(),
                     ],
                   ),
                 ],
@@ -89,7 +81,7 @@ class AboutCard extends StatelessWidget {
           ),
           Flexible(
             child: Text(
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "DeFood bảo lưu quyền điều chỉnh, thay thế, sửa đổi và bổ sung Điều Kiện Vận Chuyển hoặc bất kỳ chính sách nào trong Điều Kiện Vận Chuyển này tại bất kỳ thời điểm nào khi xét thấy phù hợp với quy định của pháp luật. Các điều chỉnh, thay thế, sửa đổi và bổ sung của Điều Kiện Vận Chuyển hoặc các chính sách được quy định trong Điều Kiện Sử Dụng sẽ có hiệu lực ngay khi được đă ng trên DEFOOD.VN hoặc ứng dụng DEFOOD.",
               style: TextStyle(
                 color: AppColor.primary,
               ),

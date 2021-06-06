@@ -25,13 +25,14 @@ class InboxScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          "Inbox",
+                          "Tin nhắn",
                           style: Helper.getTheme(context).headline5,
                         ),
                       ),
-                      Image.asset(
-                        Helper.getAssetName("cart.png", "virtual"),
-                      ),
+                      Icon(
+                        Icons.event_available,
+                        size: 30,
+                      )
                     ],
                   ),
                 ),
@@ -39,42 +40,23 @@ class InboxScreen extends StatelessWidget {
                   height: 30,
                 ),
                 MailCard(
-                  title: "MealMonkey Promotions",
+                  title: "Khuyến mãi 50%",
                   description:
-                      "Lorem Ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor ",
-                  time: "6th July",
+                      "Tận Hưởng Món Ngon Tại Nhà. Tặng Mã Giảm Giá 25K ",
+                  time: "05 tháng 6",
                 ),
                 MailCard(
-                  title: "MealMonkey Promotions",
+                  title: "Deal DeFood",
                   description:
-                      "Lorem Ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor ",
-                  time: "6th July",
+                      "Ăn Ngon Tại Nhà Đã Có Mã Giảm Giá Freeship 40K ",
+                  time: "04 tháng 6",
                   color: AppColor.placeholderBg,
                 ),
                 MailCard(
-                  title: "MealMonkey Promotions",
+                  title: "Ưu đãi từ 19h-21h",
                   description:
-                      "Lorem Ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor ",
-                  time: "6th July",
-                ),
-                MailCard(
-                  title: "MealMonkey Promotions",
-                  description:
-                      "Lorem Ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor ",
-                  time: "6th July",
-                  color: AppColor.placeholderBg,
-                ),
-                MailCard(
-                  title: "MealMonkey Promotions",
-                  description:
-                      "Lorem Ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor ",
-                  time: "6th July",
-                ),
-                MailCard(
-                  title: "MealMonkey Promotions",
-                  description:
-                      "Lorem Ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor ",
-                  time: "6th July",
+                      "DeFood Khuyến Mãi Đồng Giá 29K Cho Bạn Ăn Khuya Chẳng Ngại",
+                  time: "03 tháng 6",
                 ),
               ],
             ),
@@ -83,7 +65,7 @@ class InboxScreen extends StatelessWidget {
             bottom: 0,
             left: 0,
             child: CustomNavBar(
-              menu: true,
+              more: true,
             ),
           ),
         ],
