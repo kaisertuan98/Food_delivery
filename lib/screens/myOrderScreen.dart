@@ -79,7 +79,7 @@ class MyOrderScreen extends StatelessWidget {
                                 Text(
                                   "4.9",
                                   style: TextStyle(
-                                    color: AppColor.orange,
+                                    color: AppColor.green,
                                   ),
                                 ),
                                 Text(" (124 đánh giá)"),
@@ -95,7 +95,7 @@ class MyOrderScreen extends StatelessWidget {
                                   child: Text(
                                     ".",
                                     style: TextStyle(
-                                      color: AppColor.orange,
+                                      color: AppColor.green,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -188,12 +188,12 @@ class MyOrderScreen extends StatelessWidget {
                                   children: [
                                     Icon(
                                       Icons.add,
-                                      color: AppColor.orange,
+                                      color: AppColor.green,
                                     ),
                                     Text(
                                       "Ghi chú",
                                       style: TextStyle(
-                                        color: AppColor.orange,
+                                        color: AppColor.green,
                                       ),
                                     )
                                   ],
@@ -215,7 +215,7 @@ class MyOrderScreen extends StatelessWidget {
                           Text(
                             "\$68",
                             style: Helper.getTheme(context).headline3.copyWith(
-                                  color: AppColor.orange,
+                                  color: AppColor.green,
                                 ),
                           )
                         ],
@@ -234,7 +234,7 @@ class MyOrderScreen extends StatelessWidget {
                           Text(
                             "\$2",
                             style: Helper.getTheme(context).headline3.copyWith(
-                                  color: AppColor.orange,
+                                  color: AppColor.green,
                                 ),
                           )
                         ],
@@ -260,7 +260,7 @@ class MyOrderScreen extends StatelessWidget {
                           Text(
                             "\$70",
                             style: Helper.getTheme(context).headline3.copyWith(
-                                  color: AppColor.orange,
+                                  color: AppColor.green,
                                   fontSize: 22,
                                 ),
                           )
@@ -271,6 +271,9 @@ class MyOrderScreen extends StatelessWidget {
                         height: 50,
                         width: double.infinity,
                         child: ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.green)),
                           onPressed: () {
                             Navigator.of(context)
                                 .pushNamed(CheckoutScreen.routeName);

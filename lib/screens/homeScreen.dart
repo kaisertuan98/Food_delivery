@@ -32,7 +32,10 @@ class HomeScreen extends StatelessWidget {
                           "Nice to meet you!!",
                           style: Helper.getTheme(context).headline5,
                         ),
-                        Image.asset(Helper.getAssetName("cart.png", "virtual"))
+                        Icon(
+                          Icons.event_available,
+                          size: 30,
+                        )
                       ],
                     ),
                   ),
@@ -343,7 +346,7 @@ class RecentItemCard extends StatelessWidget {
                       child: Text(
                         ".",
                         style: TextStyle(
-                          color: AppColor.orange,
+                          color: AppColor.green,
                           fontWeight: FontWeight.w900,
                         ),
                       ),
@@ -368,7 +371,7 @@ class RecentItemCard extends StatelessWidget {
                     Text(
                       "4.9",
                       style: TextStyle(
-                        color: AppColor.orange,
+                        color: AppColor.green,
                       ),
                     ),
                     SizedBox(width: 10),
@@ -427,7 +430,7 @@ class MostPopularCard extends StatelessWidget {
               child: Text(
                 ".",
                 style: TextStyle(
-                  color: AppColor.orange,
+                  color: AppColor.green,
                   fontWeight: FontWeight.w900,
                 ),
               ),
@@ -448,7 +451,7 @@ class MostPopularCard extends StatelessWidget {
             Text(
               "4.9",
               style: TextStyle(
-                color: AppColor.orange,
+                color: AppColor.green,
               ),
             )
           ],
@@ -509,7 +512,7 @@ class RestaurantCard extends StatelessWidget {
                     Text(
                       "4.9",
                       style: TextStyle(
-                        color: AppColor.orange,
+                        color: AppColor.green,
                       ),
                     ),
                     SizedBox(
@@ -528,7 +531,7 @@ class RestaurantCard extends StatelessWidget {
                       child: Text(
                         ".",
                         style: TextStyle(
-                          color: AppColor.orange,
+                          color: AppColor.green,
                           fontWeight: FontWeight.w900,
                         ),
                       ),

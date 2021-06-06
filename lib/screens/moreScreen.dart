@@ -27,11 +27,12 @@ class MoreScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Tiện ích",
-                        style: Helper.getTheme(context).headline5,
+                        style: Helper.getTheme(context).headline6,
                       ),
-                      Image.asset(
-                        Helper.getAssetName("cart.png", "virtual"),
-                      ),
+                      Icon(
+                        Icons.event_available,
+                        size: 30,
+                      )
                     ],
                   ),
                   SizedBox(
@@ -47,7 +48,7 @@ class MoreScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   MoreCard(
                     image: Image.asset(
@@ -59,7 +60,7 @@ class MoreScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   MoreCard(
                     image: Image.asset(
@@ -73,7 +74,7 @@ class MoreScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   MoreCard(
                     image: Image.asset(
@@ -85,7 +86,7 @@ class MoreScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   MoreCard(
                     image: Image.asset(
@@ -97,7 +98,7 @@ class MoreScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                 ]),
               ),
@@ -201,7 +202,7 @@ class MoreCard extends StatelessWidget {
                   height: 20,
                   width: 20,
                   margin: const EdgeInsets.only(
-                    right: 50,
+                    right: 40,
                   ),
                   decoration: ShapeDecoration(
                     shape: CircleBorder(),
@@ -209,7 +210,7 @@ class MoreCard extends StatelessWidget {
                   ),
                   child: Center(
                     child: Text(
-                      "15",
+                      "5",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),

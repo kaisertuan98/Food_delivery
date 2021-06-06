@@ -30,7 +30,7 @@ class CheckoutScreen extends StatelessWidget {
                     Expanded(
                       child: Text(
                         "Thanh toán",
-                        style: Helper.getTheme(context).headline5,
+                        style: Helper.getTheme(context).headline6,
                       ),
                     ),
                   ],
@@ -65,8 +65,8 @@ class CheckoutScreen extends StatelessWidget {
                         child: Text(
                           "Thay đổi",
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                              fontWeight: FontWeight.bold,
+                              color: AppColor.green),
                         ),
                       ),
                     ],
@@ -238,6 +238,10 @@ class CheckoutScreen extends StatelessWidget {
                                         child: SizedBox(
                                           height: 50,
                                           child: ElevatedButton(
+                                              style: ButtonStyle(
+                                                  backgroundColor:
+                                                      MaterialStateProperty.all(
+                                                          AppColor.green)),
                                               onPressed: () {
                                                 Navigator.of(context).pop();
                                               },
@@ -262,12 +266,15 @@ class CheckoutScreen extends StatelessWidget {
                         },
                         child: Row(
                           children: [
-                            Icon(Icons.add),
+                            Icon(
+                              Icons.add,
+                              color: AppColor.green,
+                            ),
                             Text(
                               "Thêm thẻ",
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColor.green),
                             )
                           ],
                         ),
@@ -451,6 +458,9 @@ class CheckoutScreen extends StatelessWidget {
                     height: 50,
                     width: double.infinity,
                     child: ElevatedButton(
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.green)),
                       onPressed: () {
                         showModalBottomSheet(
                             shape: RoundedRectangleBorder(
@@ -521,6 +531,10 @@ class CheckoutScreen extends StatelessWidget {
                                         height: 50,
                                         width: double.infinity,
                                         child: ElevatedButton(
+                                          style: ButtonStyle(
+                                              backgroundColor:
+                                                  MaterialStateProperty.all(
+                                                      AppColor.green)),
                                           onPressed: () {},
                                           child: Text("Theo dõi đơn hàng"),
                                         ),

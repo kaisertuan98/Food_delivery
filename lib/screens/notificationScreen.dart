@@ -27,13 +27,14 @@ class NotificationScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: Text(
-                        "Notifications",
+                        "Thông báo",
                         style: Helper.getTheme(context).headline5,
                       ),
                     ),
-                    Image.asset(
-                      Helper.getAssetName("cart.png", "virtual"),
-                    ),
+                    Icon(
+                      Icons.event_available,
+                      size: 30,
+                    )
                   ],
                 ),
               ),
@@ -41,47 +42,39 @@ class NotificationScreen extends StatelessWidget {
                 height: 20,
               ),
               NotiCard(
-                title: "Your order has been picked up",
-                time: "Now",
+                title: "Đơn hàng của bạn đã được nhận",
+                time: "Bây giờ",
               ),
               NotiCard(
-                title: "Your order has been delivered",
-                time: "1 h ago",
+                title: "Đơn hàng của bạn đã được giao",
+                time: "1h trước",
                 color: AppColor.placeholderBg,
               ),
               NotiCard(
-                title: "Lorem ipsum dolor sit amet, consectetur",
-                time: "3 h ago",
+                title: "Hoàn thành thanh toán",
+                time: "1h trước",
               ),
               NotiCard(
-                title: "Lorem ipsum dolor sit amet, consectetur",
-                time: "5 h ago",
+                title: "Đơn hàng của bạn đã tạo. Vui lòng thanh toán",
+                time: "2h trước",
               ),
               NotiCard(
-                title: "Lorem ipsum dolor sit amet, consectetur",
-                time: "05 Sep 2020",
+                title: "Giảm giá 15% cho đơn hàng từ 99",
+                time: "01 tháng 6 2021",
                 color: AppColor.placeholderBg,
               ),
               NotiCard(
-                title: "Lorem ipsum dolor sit amet, consectetur",
-                time: "12 Aug 2020",
+                title: "Mừng ngày Quốc tế thiếu nhi",
+                time: "01 tháng 6 2021",
                 color: AppColor.placeholderBg,
-              ),
-              NotiCard(
-                title: "Lorem ipsum dolor sit amet, consectetur",
-                time: "20 Jul 2020",
-              ),
-              NotiCard(
-                title: "Lorem ipsum dolor sit amet, consectetur",
-                time: "12 Jul 2020",
-              ),
+              )
             ],
           )),
           Positioned(
               bottom: 0,
               left: 0,
               child: CustomNavBar(
-                menu: true,
+                more: true,
               ))
         ],
       ),

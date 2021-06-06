@@ -26,8 +26,9 @@ class MenuScreen extends StatelessWidget {
                         "Menu",
                         style: Helper.getTheme(context).headline5,
                       ),
-                      Image.asset(
-                        Helper.getAssetName("cart.png", "virtual"),
+                      Icon(
+                        Icons.event_available,
+                        size: 30,
                       )
                     ],
                   ),
@@ -54,7 +55,7 @@ class MenuScreen extends StatelessWidget {
                                   bottomRight: Radius.circular(30),
                                 ),
                               ),
-                              color: AppColor.orange),
+                              color: AppColor.green),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -73,7 +74,7 @@ class MenuScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                name: "Đồ ăn",
+                                name: "Món ăn",
                                 count: "120",
                               ),
                               SizedBox(

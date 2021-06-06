@@ -29,15 +29,14 @@ class PaymentScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          "Payment Details",
-                          style: Helper.getTheme(context).headline5,
+                          "Phương thức thanh toán",
+                          style: Helper.getTheme(context).headline4,
                         ),
                       ),
-                      Image.asset(
-                        Helper.getAssetName(
-                          "cart.png",
-                          "virtual",
-                        ),
+                      Icon(
+                        Icons.event_available,
+                        color: Colors.green,
+                        size: 30.0,
                       )
                     ],
                   ),
@@ -50,7 +49,7 @@ class PaymentScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        "Customize your payment method",
+                        "Phương thức thanh toán của bạn",
                         style: Helper.getTheme(context).headline3,
                       )
                     ],
@@ -89,14 +88,14 @@ class PaymentScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Cash/Card on delivery",
+                              "Tiền mặt / Thẻ khi giao hàng",
                               style: TextStyle(
                                   color: AppColor.primary,
                                   fontWeight: FontWeight.bold),
                             ),
                             Icon(
                               Icons.check,
-                              color: AppColor.orange,
+                              color: AppColor.green,
                             )
                           ],
                         ),
@@ -120,16 +119,16 @@ class PaymentScreen extends StatelessWidget {
                               style: ButtonStyle(
                                   side: MaterialStateProperty.all(
                                     BorderSide(
-                                      color: AppColor.orange,
+                                      color: AppColor.green,
                                     ),
                                   ),
                                   shape: MaterialStateProperty.all(
                                     StadiumBorder(),
                                   ),
                                   foregroundColor: MaterialStateProperty.all(
-                                      AppColor.orange)),
+                                      AppColor.green)),
                               onPressed: () {},
-                              child: Text("Delete Card"),
+                              child: Text("Xoá thẻ"),
                             )
                           ],
                         ),
@@ -141,7 +140,7 @@ class PaymentScreen extends StatelessWidget {
                         Row(
                           children: [
                             Text(
-                              "Other Methods",
+                              "Thêm phương thức thanh toán",
                               style: TextStyle(
                                   color: AppColor.primary,
                                   fontWeight: FontWeight.bold),
@@ -191,7 +190,7 @@ class PaymentScreen extends StatelessWidget {
                                       child: Row(
                                         children: [
                                           Text(
-                                            "Add Credit/Debit Card",
+                                            "Thêm thẻ tín dụng/ghi nợ",
                                             style: Helper.getTheme(context)
                                                 .headline3,
                                           )
@@ -211,8 +210,8 @@ class PaymentScreen extends StatelessWidget {
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20.0),
-                                      child: CustomTextInput(
-                                          hintText: "card Number"),
+                                      child:
+                                          CustomTextInput(hintText: "Số thẻ"),
                                     ),
                                     SizedBox(
                                       height: 20,
@@ -224,7 +223,7 @@ class PaymentScreen extends StatelessWidget {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text("Expiry"),
+                                          Text("Hết hạn"),
                                           SizedBox(
                                             height: 50,
                                             width: 100,
@@ -251,7 +250,7 @@ class PaymentScreen extends StatelessWidget {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20.0),
                                       child: CustomTextInput(
-                                          hintText: "Security Code"),
+                                          hintText: "Mã bảo mật"),
                                     ),
                                     SizedBox(
                                       height: 20,
@@ -259,8 +258,7 @@ class PaymentScreen extends StatelessWidget {
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20.0),
-                                      child: CustomTextInput(
-                                          hintText: "First Name"),
+                                      child: CustomTextInput(hintText: "Họ"),
                                     ),
                                     SizedBox(
                                       height: 20,
@@ -268,8 +266,7 @@ class PaymentScreen extends StatelessWidget {
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20.0),
-                                      child: CustomTextInput(
-                                          hintText: "Last Name"),
+                                      child: CustomTextInput(hintText: "Tên"),
                                     ),
                                     SizedBox(
                                       height: 20,
@@ -281,7 +278,7 @@ class PaymentScreen extends StatelessWidget {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text("You can remove this card"),
+                                          Text("Bạn có thể xóa thẻ này"),
                                           Switch(
                                             value: false,
                                             onChanged: (_) {},
@@ -313,7 +310,7 @@ class PaymentScreen extends StatelessWidget {
                                                   Icons.add,
                                                 ),
                                                 SizedBox(width: 40),
-                                                Text("Add Card"),
+                                                Text("Thêm thẻ"),
                                                 SizedBox(width: 40),
                                               ],
                                             )),
@@ -328,7 +325,7 @@ class PaymentScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.add),
-                          Text("Add Another Credit/Debit Card"),
+                          Text("Thêm thẻ tín dụng / thẻ ghi nợ khác"),
                         ],
                       )),
                 )
@@ -338,7 +335,9 @@ class PaymentScreen extends StatelessWidget {
           Positioned(
             bottom: 0,
             left: 0,
-            child: CustomNavBar(),
+            child: CustomNavBar(
+              more: true,
+            ),
           ),
         ],
       ),

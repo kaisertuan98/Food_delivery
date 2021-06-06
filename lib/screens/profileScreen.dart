@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
-import 'package:monkey_app_demo/screens/homeScreen.dart';
 import 'package:monkey_app_demo/screens/landingScreen.dart';
-import 'package:monkey_app_demo/screens/loginScreen.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 import 'package:monkey_app_demo/widgets/customNavBar.dart';
 import 'package:provider/provider.dart';
@@ -31,8 +29,9 @@ class ProfileScreen extends StatelessWidget {
                             "Thông tin cá nhân",
                             style: Helper.getTheme(context).headline5,
                           ),
-                          Image.asset(
-                            Helper.getAssetName("cart.png", "virtual"),
+                          Icon(
+                            Icons.event_available,
+                            size: 30,
                           )
                         ],
                       ),
@@ -43,11 +42,11 @@ class ProfileScreen extends StatelessWidget {
                         child: Stack(
                           children: [
                             Container(
-                              height: 80,
-                              width: 80,
+                              height: 100,
+                              width: 100,
                               child: Image.asset(
                                 Helper.getAssetName(
-                                  "user.jpg",
+                                  "id.jpg",
                                   "real",
                                 ),
                                 fit: BoxFit.cover,
@@ -112,28 +111,28 @@ class ProfileScreen extends StatelessWidget {
                         value: "tuan@gmail.com",
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       CustomFormImput(
                         label: "Số điện thoại",
                         value: "0989999789",
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       CustomFormImput(
                         label: "Địa chỉ",
                         value: "Hoà Quý, Ngũ Hành Sơn, Tp Đà Nẵng",
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       CustomFormImput(
                         label: "Năm sinh",
                         value: "15/02/1998",
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       CustomFormImput(
                         label: "Mật khẩu",
@@ -147,6 +146,9 @@ class ProfileScreen extends StatelessWidget {
                         height: 50,
                         width: double.infinity,
                         child: ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.green)),
                           onPressed: () {
                             context.read<AuthenticateService>().logOut();
                             Navigator.of(context)

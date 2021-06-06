@@ -26,9 +26,10 @@ class OfferScreen extends StatelessWidget {
                             "Ưu đãi mới nhất",
                             style: Helper.getTheme(context).headline5,
                           ),
-                          Image.asset(
-                            Helper.getAssetName("cart.png", "virtual"),
-                          ),
+                          Icon(
+                            Icons.event_available,
+                            size: 30,
+                          )
                         ],
                       ),
                     ),
@@ -52,6 +53,9 @@ class OfferScreen extends StatelessWidget {
                             height: 30,
                             width: Helper.getScreenWidth(context) * 0.4,
                             child: ElevatedButton(
+                                style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Colors.green)),
                                 onPressed: () {},
                                 child: Text("Phiếu giảm giá")),
                           ),
