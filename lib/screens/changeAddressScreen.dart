@@ -25,8 +25,8 @@ class ChangeAddressScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "Change Address",
-                      style: Helper.getTheme(context).headline5,
+                      "Địa chỉ giao hàng",
+                      style: Helper.getTheme(context).headline6,
                     )
                   ],
                 ),
@@ -124,7 +124,7 @@ class ChangeAddressScreen extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                SearchBar(title: "Search Address"),
+                SearchBar(title: "Tìm kiếm địa chỉ"),
                 SizedBox(
                   height: 10,
                 ),
@@ -150,7 +150,7 @@ class ChangeAddressScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          "Choose a saved place",
+                          "Chọn một địa điểm đã lưu",
                           style: TextStyle(
                             color: AppColor.primary,
                           ),

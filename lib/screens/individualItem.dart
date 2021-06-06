@@ -100,7 +100,7 @@ class IndividualItem extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 20),
                                           child: Text(
-                                            "Tandoori Chicken Pizza",
+                                            "Pizza Meat Lover Supreme",
                                             style: Helper.getTheme(context)
                                                 .headline5,
                                           ),
@@ -164,7 +164,7 @@ class IndividualItem extends StatelessWidget {
                                                     height: 5,
                                                   ),
                                                   Text(
-                                                    "4 Star Ratings",
+                                                    "Đánh giá",
                                                     style: TextStyle(
                                                       color: AppColor.orange,
                                                       fontSize: 12,
@@ -181,7 +181,7 @@ class IndividualItem extends StatelessWidget {
                                                       height: 20,
                                                     ),
                                                     Text(
-                                                      "Rs. 750",
+                                                      "250.000",
                                                       style: TextStyle(
                                                         color: AppColor.primary,
                                                         fontSize: 30,
@@ -189,7 +189,7 @@ class IndividualItem extends StatelessWidget {
                                                             FontWeight.w700,
                                                       ),
                                                     ),
-                                                    Text("/per Portion")
+                                                    Text("/một phần")
                                                   ],
                                                 ),
                                               )
@@ -200,7 +200,7 @@ class IndividualItem extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 20),
                                           child: Text(
-                                            "Description",
+                                            "Mô tả",
                                             style: Helper.getTheme(context)
                                                 .headline4
                                                 .copyWith(
@@ -215,7 +215,7 @@ class IndividualItem extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 20),
                                           child: Text(
-                                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare leo non mollis id cursus. Eu euismod faucibus in leo malesuada"),
+                                              "Nếu bạn là người yêu thích những món thịt, đừng quên đặt Pizza Meat lover supreme. Một chiếc bánh pizza ngon rẻ, cỡ lớn sẽ đủ cho cả gia đình từ 3 đến 4 thành viên thưởng thức. Những miếng bánh pizza đế mềm, mỏng, rất thơm mà không khô cứng cùng phần nhân đầy ắp sẽ khiến bạn thích mê khi lựa chọn món."),
                                         ),
                                         SizedBox(
                                           height: 20,
@@ -235,7 +235,7 @@ class IndividualItem extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 20),
                                           child: Text(
-                                            "Customize your Order",
+                                            "Tùy chỉnh đơn đặt hàng của bạn",
                                             style: Helper.getTheme(context)
                                                 .headline4
                                                 .copyWith(
@@ -266,7 +266,7 @@ class IndividualItem extends StatelessWidget {
                                                 hint: Row(
                                                   children: [
                                                     Text(
-                                                        "-Select the size of portion-"),
+                                                        "-Chọn kích thước của phần-"),
                                                   ],
                                                 ),
                                                 value: "default",
@@ -274,7 +274,7 @@ class IndividualItem extends StatelessWidget {
                                                 items: [
                                                   DropdownMenuItem(
                                                     child: Text(
-                                                        "-Select the size of portion-"),
+                                                        "-Chọn kích thước của phần-"),
                                                     value: "default",
                                                   ),
                                                 ],
@@ -311,7 +311,7 @@ class IndividualItem extends StatelessWidget {
                                                 hint: Row(
                                                   children: [
                                                     Text(
-                                                        "-Select the ingredients-"),
+                                                        "-Chọn các thành phần-"),
                                                   ],
                                                 ),
                                                 value: "default",
@@ -319,7 +319,7 @@ class IndividualItem extends StatelessWidget {
                                                 items: [
                                                   DropdownMenuItem(
                                                     child: Text(
-                                                        "-Select the ingredients-"),
+                                                        "-Chọn các thành phần-"),
                                                     value: "default",
                                                   ),
                                                 ],
@@ -342,7 +342,7 @@ class IndividualItem extends StatelessWidget {
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Number of Portions",
+                                                "Số phần",
                                                 style: Helper.getTheme(context)
                                                     .headline4
                                                     .copyWith(
@@ -480,13 +480,13 @@ class IndividualItem extends StatelessWidget {
                                                               .center,
                                                       children: [
                                                         Text(
-                                                          "Total Price",
+                                                          "Tổng giá",
                                                         ),
                                                         SizedBox(
                                                           height: 10,
                                                         ),
                                                         Text(
-                                                          "LKR 1500",
+                                                          "250.000",
                                                           style: TextStyle(
                                                             color: AppColor
                                                                 .primary,
@@ -511,7 +511,7 @@ class IndividualItem extends StatelessWidget {
                                                                         "virtual"),
                                                                   ),
                                                                   Text(
-                                                                    "Add to Cart",
+                                                                    "Thêm",
                                                                   )
                                                                 ],
                                                               )),
