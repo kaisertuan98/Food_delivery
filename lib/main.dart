@@ -7,7 +7,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
-import './screens/spashScreen.dart';
 import './screens/landingScreen.dart';
 import './screens/loginScreen.dart';
 import './screens/signUpScreen.dart';
@@ -45,10 +44,6 @@ class MyApp extends StatelessWidget {
         Provider<AuthenticateService>(
           create: (_) => AuthenticateService(FirebaseAuth.instance),
         ),
-        // StreamProvider(
-        //   create: (context) =>
-        //       context.read<AuthenticateService>().authStateChanges,
-        // ),
         StreamProvider(
           create: (context) =>
               context.read<AuthenticateService>().authStateChanges,

@@ -72,7 +72,7 @@ class CustomNavBar extends StatelessWidget {
                                 )
                               : Icon(
                                   Icons.menu_book,
-                                  color: Colors.red[700],
+                                  color: Colors.grey,
                                   size: 30.0,
                                 ),
                           menu
@@ -100,7 +100,7 @@ class CustomNavBar extends StatelessWidget {
                                 )
                               : Icon(
                                   Icons.verified,
-                                  color: Colors.red[700],
+                                  color: Colors.grey,
                                   size: 30.0,
                                 ),
                           offer
@@ -131,7 +131,7 @@ class CustomNavBar extends StatelessWidget {
                                 )
                               : Icon(
                                   Icons.person_sharp,
-                                  color: Colors.red[700],
+                                  color: Colors.grey,
                                   size: 30.0,
                                 ),
                           profile
@@ -159,7 +159,7 @@ class CustomNavBar extends StatelessWidget {
                                 )
                               : Icon(
                                   Icons.apps_sharp,
-                                  color: Colors.red[700],
+                                  color: Colors.grey,
                                   size: 30.0,
                                 ),
                           more
@@ -181,7 +181,7 @@ class CustomNavBar extends StatelessWidget {
               width: 70,
               child: FloatingActionButton(
                 elevation: 0,
-                backgroundColor: home ? AppColor.green : AppColor.red,
+                backgroundColor: home ? AppColor.green : AppColor.placeholder,
                 onPressed: () {
                   if (!home) {
                     Navigator.of(context)
