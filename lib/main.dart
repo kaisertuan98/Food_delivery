@@ -51,7 +51,8 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        title: 'De Food',
         theme: ThemeData(
           fontFamily: "Metropolis",
           primarySwatch: Colors.red,

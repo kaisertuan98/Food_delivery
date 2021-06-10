@@ -110,6 +110,9 @@ class _IntroScreenState extends State<IntroScreen> {
                   height: 50,
                   width: double.infinity,
                   child: ElevatedButton(
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.green)),
                       onPressed: () {
                         Navigator.of(context)
                             .pushReplacementNamed(HomeScreen.routeName);
